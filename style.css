@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    font-family: Montserrat;
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    font-size: 14px;
+}
+
+.p-title,
+.description,
+.gray-txt {
+    color: hsl(228, 12%, 48%);
+}
+
+.p-title {
+    padding-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+h1 {
+    color:  hsl(212, 21%, 14%);
+    font-family: fraunces;
+    font-weight: 700;
+}
+h1, .description{
+    padding-bottom: 15px;
+}
+
+.price {
+    color: hsl(158, 36%, 37%);
+    font-family: fraunces;
+    font-weight: 700;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+.price .gray-txt {
+    font-family: Montserrat;
+    text-decoration: line-through;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 14px;
+    text-decoration: line-through;
+    padding-left: 15px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.row {
+    display: flex;
+    max-width: 550px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+}
+
+.col-1 img{
+    max-width: 100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.col-2 {
+    padding: 15px 25px 25px 25px;
+    border-radius: 10px;
+    width: fit-content;
+}
+.button {
+    background-color: hsl(158, 36%, 37%);
+    color:hsl(0, 0%, 100%);
+    font-family: Montserrat;
+    border: none;
+    border-radius: 7px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button:hover {
+    background-color: hsl(158, 36%, 17%);
+}
+.button img {
+    padding-right: 10px;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        padding: 20px;
+    }
+     .row {
+        flex-direction: column;
+    }
+    .col-1 img {
+        content: url(images/image-product-mobile.jpg);
+        border-radius: 10px 10px 0 0;
+    }
+    .price {
+        padding-bottom: 10px;
+    }
+    .button {
+        padding: 20px;
+    }
+    
+}
