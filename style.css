@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    font-family: Montserrat;
+    font-size: 14px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.row {
+    display: flex;
+    max-width: 550px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+}
+
+.col-1 img{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.col-2 {
+    padding: 1.5rem 2rem;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+.p-title,
+.description,
+.gray-txt {
+    color: hsl(228, 12%, 48%);
+}
+
+.p-title {
+    padding-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+h1 {
+    color:  hsl(212, 21%, 14%);
+    font-family: fraunces;
+    font-size: 2rem;
+    font-weight: 700;
+}
+h1, .description{
+    padding-bottom: 1rem;
+}
+
+.price {
+    color: hsl(158, 36%, 37%);
+    font-family: fraunces;
+    font-weight: 700;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+.price .gray-txt {
+    font-family: Montserrat;
+    text-decoration: line-through;
+    font-size: 0.875rem;
+    padding-left: 15px;
+}
+
+.button {
+    background-color: hsl(158, 36%, 37%);
+    color:hsl(0, 0%, 100%);
+    font-family: Montserrat;
+    border: none;
+    border-radius: 7px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.button:hover {
+    background-color: hsl(158, 36%, 17%);
+    cursor: pointer;
+}
+
+.attribution {  
+    font-family: Montserrat;
+    position: absolute;
+    bottom: 1rem;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (max-width: 548px) {
+    .container {
+        padding: 20px;
+    }
+     .row {
+        flex-direction: column;
+    }
+    .col-1 img {
+        border-radius: 10px 10px 0 0;
+    }
+    .price {
+        justify-content: center;
+        padding-bottom: 10px;
+    }
+    .button {
+        padding: 20px;
+    }
+    
+}
